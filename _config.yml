@@ -6,11 +6,11 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: VASE
+title: SSVG
 description: APCSP Group Project
 github_username: vivianknee
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "VaseProject"
+github_repo: "t2p3t1"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
@@ -34,7 +34,7 @@ url: "https://vivianknee.github.io" # the base hostname & protocol for your site
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/VaseProject" # the subpath of your site, e.g. "/blog".
+baseurl: "/t2p3t1" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
