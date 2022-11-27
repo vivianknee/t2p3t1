@@ -162,8 +162,8 @@ window.onload = wrap_img;
 <span class="n">number</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1">#integer</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 
-<span class="n">boolean</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">boolean</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">boolean</span><span class="p">))</span>
+<span class="n">isAbsent</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">isAbsent</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">isAbsent</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -194,7 +194,7 @@ False &lt;class &#39;bool&#39;&gt;
 <p>A list of data can also be stored in variables. Why is that useful?</p>
 <ul>
 <li>print/retrieve specific values in the list without creating a lot of variables</li>
-<li>easily remove/add items into the list</li>
+<li>easily remove/add/change items into the list (get into this soon)</li>
 </ul>
 
 </div>
@@ -221,7 +221,7 @@ False &lt;class &#39;bool&#39;&gt;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>yellow
+<pre>[&#39;red&#39;, &#39;orange&#39;, &#39;yellow&#39;]
 </pre>
 </div>
 </div>
@@ -234,10 +234,124 @@ False &lt;class &#39;bool&#39;&gt;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Assignments">Assignments<a class="anchor-link" href="#Assignments"> </a></h3>
+<h3 id="Assignments">Assignments<a class="anchor-link" href="#Assignments"> </a></h3><ul>
+<li>The assignment operator allows a program to change the value represented by a variable</li>
+<li>remove/add/change items into the list</li>
+</ul>
+
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The value stored in a variable will be the most recent value assigned</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Changing-Values">Changing Values<a class="anchor-link" href="#Changing-Values"> </a></h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">currentScore</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">highScore</span> <span class="o">=</span> <span class="n">currentScore</span>
+<span class="n">currentScore</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">highScore</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>your turn!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="n">num2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Data-Abstraction">Data Abstraction<a class="anchor-link" href="#Data-Abstraction"> </a></h3>
