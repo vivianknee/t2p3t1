@@ -1,0 +1,66 @@
+{
+  
+    
+        "post0": {
+            "title": "Variables, Assignments, and Data Abstraction",
+            "content": "this is a test commit .",
+            "url": "https://vivianknee.github.io/t2p3t1/lectures/2022/11/27/var-ass-dataab-lecture.html",
+            "relUrl": "/lectures/2022/11/27/var-ass-dataab-lecture.html",
+            "date": " • Nov 27, 2022"
+        }
+        
+    
+  
+
+  
+  
+      ,"page0": {
+          "title": "About Us",
+          "content": "This website is powered by SSVG . Who are we? . . Shreya: Scrum Master | Vivian Ni: Frontend Developer | Sarah Liu: Backend Developer | Giannina: DevOp | . .",
+          "url": "https://vivianknee.github.io/t2p3t1/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+      ,"page12": {
+          "title": "",
+          "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
+          "url": "https://vivianknee.github.io/t2p3t1/robots.txt",
+          "relUrl": "/robots.txt",
+          "date": ""
+      }
+      
+  
+
+}
