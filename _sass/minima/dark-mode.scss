@@ -1,0 +1,180 @@
+$high-emph: rgba(rgb(7, 0, 0), 0.87);
+$med-emph: rgba(rgb(9, 9, 9), 0.69); //Noicee
+$low-emph: rgba(rgb(9, 8, 8), 0.38);
+$dark-grey : #f3f2f7; 
+$clear: clear;
+// $dark-grey : #1F1B24;
+$overlay: mix($dark-grey, rgb(43, 39, 39), 95%);
+$overlay-light: mix($dark-grey, rgb(74, 69, 69), 86%);
+
+html, body, input, textarea, select, button {   
+  color: $high-emph !important;
+  background-color: $dark-grey !important;
+}
+
+* {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+a {
+    color: rgb(13, 13, 13) !important;
+}
+
+a:hover {
+    color:$high-emph !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.site-title, .site-title:visited, .site-nav, .page-link {
+    color: $high-emph !important;
+}
+
+.site-nav {
+    background-color: $clear;
+    border-color: $overlay-light;
+}
+
+* {
+    scrollbar-color: $dark-grey $overlay-light;
+}
+
+pre, code {
+    // BVas a lighter colour to better highlight short code words
+    border-color: $overlay-light;
+    background-color: $overlay;
+}
+
+.page-description {
+    color: $med-emph;
+}
+
+.post-meta {
+    color: $med-emph;
+}
+
+.post-content p, .post-content li {
+    color: $high-emph;
+}
+
+.btn {
+    background-color: $overlay !important;
+    color: $high-emph !important;
+    border-color: $overlay-light !important;
+}
+
+.btn:hover {
+    background-color: $dark-grey !important;
+}
+
+table th{
+    background-color: $overlay;
+    border-color: $overlay-light;
+    color: $high-emph;
+}
+
+table td{
+    background-color: $dark-grey;
+    border-color: $overlay-light;
+    color: $med-emph;
+}
+
+.flash {
+    color: $dark-grey !important;
+    filter: brightness(80%);
+}
+
+canvas {
+    filter: invert(100%);
+}
+
+.post-list > li > div {
+    box-shadow: none !important;
+    background-color: $overlay;
+    border: none !important;
+}
+
+li .post-meta-description {
+    color: $med-emph !important;
+}
+
+.cell-center {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+  }
+
+.instructbtn {
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid #00ABB3;
+    border-radius: 12px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+
+.instructbtn:hover {
+    background-color: #00ABB3;
+    color: white;
+}
+
+.instructbtn:active {
+    background-color: #00ABB3;
+    transform: translateY(4px);
+}
+
+$background: white;
+$lfs-blue: #006ac6;
+$lfs-nurse: #00ABB3;
+$lfs-black: black;
+$lfs-grey: grey;
+
+body {
+    background-color: $background;
+}
+
+.table-latitude {
+    width: 100%;
+    caption {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $lfs-nurse;
+        text-align: center;
+    }
+    thead {
+        border-top: 2px solid $lfs-nurse;
+        border-bottom: 2px solid $lfs-nurse;
+        border-left: 2px solid $lfs-nurse;
+        border-right: 2px solid $lfs-nurse;
+        border-radius: 2px solid $lfs-nurse;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $lfs-black;
+            border: 1px solid #00ABB3;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            color: $lfs-black;
+            td {
+                padding: 10px;
+                border: $lfs-nurse;;
+            }
+            th {
+                padding-left: 10px;
+                border: $lfs-nurse;
+            }
+        }
+    }
+}

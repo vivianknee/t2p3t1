@@ -1,0 +1,40 @@
+@import 'vase';
+
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+
+
+.btn-white {
+  @include button-bg(#d8f0e2);
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 4em;
+}
+
+table{
+  padding: 0;
+  margin: 0;
+  height: 100v;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
