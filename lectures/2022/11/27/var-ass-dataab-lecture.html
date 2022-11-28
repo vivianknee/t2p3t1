@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -491,6 +491,35 @@ False &lt;class &#39;bool&#39;&gt;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Which of these will show the sum?</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num2</span> <span class="o">+=</span> <span class="n">num1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Data-Abstraction">Data Abstraction<a class="anchor-link" href="#Data-Abstraction"> </a></h2><ul>
 <li>Method used in coding to represent data in a useful form, by taking away aspects of data that aren't being used in the situation</li>
 <li>Variables and lists are primary tools in data abstraction</li>
@@ -822,6 +851,105 @@ brown
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Homework">Homework<a class="anchor-link" href="#Homework"> </a></h1><p>You will turn in a program that utilizes lists and variables as it's primary function, options could be a quiz, a sorter, database, or wherever your imagination brings you. You will be graded on how well you understood the concepts and if you used anything other than just the simplest parts</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Quiz template, if you do use it, fix the issues, and add more to it than it's current barebones state. I would recommend using it to create something related to school.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quesCount</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Use a dictionary for the questions</span>
+<span class="n">quesList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Question1&quot;</span><span class="p">,</span> <span class="s2">&quot;Question2&quot;</span><span class="p">,</span> <span class="s2">&quot;Question3&quot;</span><span class="p">,</span> <span class="s2">&quot;Question4&quot;</span><span class="p">]</span>
+
+<span class="c1"># Use a dictionary for the correct solutions</span>
+<span class="n">soluList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Solution1&quot;</span><span class="p">,</span> <span class="s2">&quot;Solution2&quot;</span><span class="p">,</span> <span class="s2">&quot;Solution3&quot;</span><span class="p">,</span> <span class="s2">&quot;Solution4&quot;</span><span class="p">]</span>
+
+<span class="n">quesAmount</span><span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">quesList</span><span class="p">)</span>
+
+<span class="n">hrm</span> <span class="n">quesCount</span> <span class="o">&lt;=</span> <span class="n">quesAmount</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">quesList</span><span class="p">[</span><span class="n">quescount</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">guess</span> <span class="o">==</span> <span class="n">soluList</span><span class="p">[</span><span class="n">quesamOOuaunt</span><span class="p">]):</span>
+        <span class="n">score</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct! Score: &quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Incorrect! The correct answer was &quot;</span> <span class="o">+</span> <span class="n">soluList</span><span class="p">(</span><span class="n">quescount</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">quesCount</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final score: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Question1
+
+Correct! Score: 1
+Question2
+
+Incorrect! The correct answer was Solution2
+
+Question3
+
+Incorrect! The correct answer was Solution3
+
+Question4
+
+Incorrect! The correct answer was Solution4
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/gianninaortegarico/vscode/t2p3t1/_notebooks/2022-2-27-var-ass-dataab-lecture.ipynb Cell 39</span> in <span class="ansi-cyan-fg">&lt;cell line: 13&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/gianninaortegarico/vscode/t2p3t1/_notebooks/2022-2-27-var-ass-dataab-lecture.ipynb#X54sZmlsZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span> quesAmount= len(quesList)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/gianninaortegarico/vscode/t2p3t1/_notebooks/2022-2-27-var-ass-dataab-lecture.ipynb#X54sZmlsZQ%3D%3D?line=12&#39;&gt;13&lt;/a&gt;</span> while quesCount &lt;= quesAmount:
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/gianninaortegarico/vscode/t2p3t1/_notebooks/2022-2-27-var-ass-dataab-lecture.ipynb#X54sZmlsZQ%3D%3D?line=13&#39;&gt;14&lt;/a&gt;</span>     print(quesList[quesCount] + &#34;\n&#34;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/gianninaortegarico/vscode/t2p3t1/_notebooks/2022-2-27-var-ass-dataab-lecture.ipynb#X54sZmlsZQ%3D%3D?line=14&#39;&gt;15&lt;/a&gt;</span>     guess = input()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/gianninaortegarico/vscode/t2p3t1/_notebooks/2022-2-27-var-ass-dataab-lecture.ipynb#X54sZmlsZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span>     if(guess == soluList[quesCount]):
+
+<span class="ansi-red-fg">IndexError</span>: list index out of range</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
