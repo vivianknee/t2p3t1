@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -491,11 +491,326 @@ False &lt;class &#39;bool&#39;&gt;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Abstraction">Data Abstraction<a class="anchor-link" href="#Data-Abstraction"> </a></h2><p>Data abstraction is the method used in coding to represent data in a useful form, by taking away aspects of data that aren't being used in the situation. Variables are a primary tool in data abstraction.</p>
+<h2 id="Data-Abstraction">Data Abstraction<a class="anchor-link" href="#Data-Abstraction"> </a></h2><ul>
+<li>Method used in coding to represent data in a useful form, by taking away aspects of data that aren't being used in the situation</li>
+<li>Variables and lists are primary tools in data abstraction</li>
+<li>Provides a separation between the abstract properties of a data type and the concrete details of its representation</li>
+</ul>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lists-&amp;-Strings">Lists &amp; Strings<a class="anchor-link" href="#Lists-&amp;-Strings"> </a></h2><ul>
+<li>List = ordered sequence of elements</li>
+<li>Element = individual value in a list that is assigned to a unique index</li>
+<li>Index = a way to reference the elements in a list or string using natural numbers; each element of a string is referenced by an index</li>
+<li>String = ordered sequence of characters (Letters, numbers, special characters)
+<div class="flash">
+    <svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <strong>Note: </strong>index starts at 1 for AP Exam, must be whole numbers, cannot be negative, and goes up to the number of elements in the list
+</div><blockquote><p>We can represent a list or string using a variable</p>
+</blockquote>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-of-a-List---Colors">Example of a List - Colors<a class="anchor-link" href="#Example-of-a-List---Colors"> </a></h2><table>
+<thead><tr>
+<th>Index</th>
+<th>Element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Green</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Purple</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Pink</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>At Index 1, the element is green, at index 2, the element is blue, etc.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Managing-the-Complexity-of-a-Program-through-Data-Abstraction">Managing the Complexity of a Program through Data Abstraction<a class="anchor-link" href="#Managing-the-Complexity-of-a-Program-through-Data-Abstraction"> </a></h2><ul>
+<li>Data abstractions help manage complexity in programs by giving a collection of data a name without referencing the specific details of the representation</li>
+<li>Developing a data abstraction to use in a program can result in a program that is easier to develop and maintain</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-Lists-as-Data-Abstractions">Using Lists as Data Abstractions<a class="anchor-link" href="#Using-Lists-as-Data-Abstractions"> </a></h2><p><strong>What are Lists?</strong></p>
+<ul>
+<li>Allow for data abstraction</li>
+<li>Bundle variables together</li>
+<li>Store multiple elements</li>
+<li>Allows multiple related items to be treated as a single value</li>
+<li>Give one name to a set of memory cells</li>
+<li>Can keep adding elements to it as needed</li>
+<li>Can store elements as a single variable by using a list</li>
+</ul>
+<p><strong>3 Types of List Operations</strong></p>
+<ol>
+<li>Assigning values to a list at certain indices</li>
+<li>Creating an empty list and assigning it to a variable</li>
+<li>Assigning a copy of one list to another list (setting one list equal to another list)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1. Assigning values to a list at certain indices</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colorsList</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pink&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">colorsList</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;pink&#39;, &#39;yellow&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;orange&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>2. Creating an empty list and assigning it to a variable</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colorsList</span><span class="o">=</span><span class="p">[]</span> <span class="c1"># can be used if you want to create a list that can be filled with values later</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>3. Assigning a copy of one list to another list (setting one list equal to another list)</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># copy of the list is made; the list isn&#39;t sorted in place</span>
+<span class="k">def</span> <span class="nf">Reverse</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span> <span class="c1"># defining variable: lst </span>
+    <span class="n">new_lst</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+    <span class="k">return</span> <span class="n">new_lst</span>
+ 
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pink&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;purple&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;black&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Reverse</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span> <span class="c1"># reverse 1st</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;black&#39;, &#39;blue&#39;, &#39;orange&#39;, &#39;yellow&#39;, &#39;purple&#39;, &#39;green&#39;, &#39;pink&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-is-Managing-Complexity?">What is Managing Complexity?<a class="anchor-link" href="#What-is-Managing-Complexity?"> </a></h2><ul>
+<li>Improving code readability</li>
+<li>Reducing the need for new variables as more data is collected</li>
+<li>Can easily update data</li>
+<li>Can easily convert data to different forms</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-do-Lists-Help-Manage-the-Complexity-of-a-Program?">How do Lists Help Manage the Complexity of a Program?<a class="anchor-link" href="#How-do-Lists-Help-Manage-the-Complexity-of-a-Program?"> </a></h2><ul>
+<li>Don’t need as many variables</li>
+<li>Can easily change the number of variables</li>
+<li>Can apply the same mathematical computation (through an algorithm) to all the elements in the list</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Abstraction-Practice">Data Abstraction Practice<a class="anchor-link" href="#Data-Abstraction-Practice"> </a></h2><blockquote><p>Manage the complexity of the given code below using a list. Re-write the code segment in a less complex way, but with the same result.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color1</span><span class="o">=</span><span class="s2">&quot;green&quot;</span>
+<span class="n">color2</span><span class="o">=</span><span class="s2">&quot;red&quot;</span>
+<span class="n">color3</span><span class="o">=</span><span class="s2">&quot;pink&quot;</span>
+<span class="n">color4</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span>
+<span class="n">color5</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span>
+<span class="n">color6</span><span class="o">=</span><span class="s2">&quot;brown&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">color1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">color2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">color3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">color4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">color5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">color6</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>green
+red
+pink
+purple
+blue
+brown
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Answer</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colorList</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;pink&quot;</span><span class="p">,</span> <span class="s2">&quot;purple&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;brown&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">colorList</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;green&#39;, &#39;red&#39;, &#39;pink&#39;, &#39;purple&#39;, &#39;blue&#39;, &#39;brown&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="AP-Exam-Use-of-Data-Abstraction">AP Exam Use of Data Abstraction<a class="anchor-link" href="#AP-Exam-Use-of-Data-Abstraction"> </a></h2><p>With the properties of the AP Exam pseudocode, lists work differently from what we've learned in python so far, here are the two major differences:</p>
