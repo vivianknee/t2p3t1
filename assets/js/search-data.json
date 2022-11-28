@@ -28,8 +28,6 @@
   
 
   
-
-  
   
 
   
@@ -42,7 +40,7 @@
   
 
   
-      ,"page12": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://vivianknee.github.io/t2p3t1/robots.txt",
